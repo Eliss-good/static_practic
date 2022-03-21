@@ -1,10 +1,8 @@
 import csv
 from math import pow, sqrt
 from line_regres import data_fram_regres
-import numpy as np
 import graph
-
-
+import numpy as np
 
 class data_paramerts:
     def __formated_to_array(self, dict_dates, command):
@@ -42,6 +40,4 @@ data1 = open_csv('hs_grad')
 data2 = open_csv('poverty')
 
 frame_regres = data_fram_regres(data1,data2)
-#line_regres.standart_mistake( ,find_line(data1,data2))
-#graph.set_grath(data1, data2, find_line(data1,data2))
-#print(t_criteria(data1,data2))
+graph.set_graph(data1, data2, frame_regres.y_fun_data, frame_regres.arr_remains)

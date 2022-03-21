@@ -85,6 +85,3 @@ class data_fram_regres:
         
         for i in range (0, self.y_fun_data.size):
             self.arr_remains = np.append(self.arr_remains, self.y_data.arr_data[i] - self.y_fun_data[i])
-        print(self.arr_remains)
-        
-
